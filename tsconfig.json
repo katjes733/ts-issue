@@ -1,0 +1,37 @@
+{
+  "ts-node": {
+    "esm": true,
+    "experimentalSpecifierResolution": "node"
+  },
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "target": "es2022",
+    "lib": ["dom", "dom.iterable", "es2022"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": "src",
+    "paths": {
+      /* This allows for relative imports to be written as paths relative to
+      the baseUrl (the src directory) rather than the file containing the
+      import statement. For example, a file at `src/a/b/c/d.ts` which imports
+      another file at `src/e.ts` could write the import as
+      `import e from '~/e'` instead of `import e from '../../../e'` */
+      "~/*": ["*"]
+    }
+  },
+  "include": [
+    "src/**/*",
+    "next-env.d.ts",
+    "next.config.js",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": ["node_modules"]
+}
