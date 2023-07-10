@@ -21,6 +21,6 @@ async function start(): Promise<void> {
   const handle = app.getRequestHandler();
 }
 
-await start().catch((error: Error) => {
+start().catch((error: Error) => {
   process.exit(1);
 });

@@ -2,7 +2,6 @@
   "name": "ts-issue",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "eslint": "eslint .",
     "eslint:fix": "eslint . --quiet --fix",
